@@ -1,4 +1,4 @@
-const path = require("path")
+// const path = require("path")
 
 module.exports = {
     mode: 'development',
@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: path.resolve('/usr/local/lib/', '../', '/build') 
+        path: __dirname + '/build'
     },
     module:{
         rules: [
