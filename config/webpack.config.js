@@ -1,4 +1,4 @@
-// const path = require("path")
+const path = require("path")
 
 module.exports = {
     mode: 'development',
@@ -7,6 +7,14 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: __dirname + '../' + '/build'
+        path: path.resolve('/usr/local/lib/', '../', '/build') 
+    },
+    module:{
+        rules: [
+            {
+                test: /\.txt$/,
+                use: "raw-loader"
+            }
+        ]
     }
 }

@@ -4,7 +4,6 @@
   "description": "webpack boilerplate",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "prod": "webpack --config ./config/webpack.config.prod.js",
     "dev": "webpack --config ./config/webpack.config.js",
@@ -14,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "raw-loader": "^4.0.2",
     "webpack": "^5.35.1",
     "webpack-cli": "^4.6.0"
   }
