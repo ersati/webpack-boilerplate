@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
     mode: 'production',
     entry:{
@@ -5,6 +7,14 @@ module.exports = {
     },
     output: {
         filename: '[name].js',
-        path: __dirname + '../' + '/build'
+        path: path.resolve(__dirname, '../build')
+    },
+    module:{
+        rules: [
+            {
+                test: /\.txt$/,
+                use: "raw-loader"
+            }
+        ]
     }
 }
