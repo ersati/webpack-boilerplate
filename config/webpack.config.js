@@ -11,6 +11,12 @@ module.exports = {
         filename: '[name]-[contenthash].js',
         path: path.resolve(__dirname, '../build')
     },
+    devServer: {
+        open: true,
+        contentBase: path.resolve(__dirname, '../build'),
+        port: 5001,
+        writeToDisk: true
+    },
     module:{
         rules: [
             {
