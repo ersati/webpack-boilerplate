@@ -2,6 +2,8 @@ const path = require("path");
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
     mode: 'development',
     entry:{
@@ -13,7 +15,7 @@ module.exports = {
     },
     devServer: {
         open: true,
-        contentBase: path.resolve(__dirname, '../build'),
+        contentBase: path.resolve(__dirname, '../public'),
         port: 5001,
         writeToDisk: true
     },
@@ -22,21 +24,28 @@ module.exports = {
             {
                 test: /\.txt$/,
                 use: "raw-loader"
+            },
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader"]
             }
         ]
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin(),
+        
         new HtmlWebpackPlugin({
             title:"main boilerplate template",
-            filename: 'template.html',
-            template: "source/template.html"
+            filename: 'index.html',
+            template: "source/templates/template.html"
 
         }),
         new HtmlWebpackPlugin({
             title:"page boilerplate template",
             filename: 'about.html'
+        }),
+        new MiniCssExtractPlugin({
+            filename: 'css/[name]-[contenthash].css'
         })
     ]
 }
