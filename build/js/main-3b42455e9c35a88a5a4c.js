@@ -7,16 +7,15 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./source/css/style.css":
-/*!******************************!*\
-  !*** ./source/css/style.css ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./source/sass/index.scss":
+/*!********************************!*\
+  !*** ./source/sass/index.scss ***!
+  \********************************/
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-boilerplate/./source/css/style.css?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleError: Module Error (from ./node_modules/sass-loader/dist/cjs.js):\\nCannot find module 'sass'\\nRequire stack:\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/utils.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/index.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/cjs.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/loader-runner/lib/loadLoader.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/loader-runner/lib/LoaderRunner.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/NormalModule.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/NormalModuleFactory.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/Compiler.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/webpack.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/index.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack-cli/lib/webpack-cli.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack-cli/lib/bootstrap.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack-cli/bin/cli.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/bin/webpack.js\\n    at Object.emitError (/Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/NormalModule.js:525:6)\\n    at getSassImplementation (/Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/utils.js:55:21)\\n    at Object.loader (/Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/index.js:27:59)\");\n\n//# sourceURL=webpack://webpack-boilerplate/./source/sass/index.scss?");
 
 /***/ }),
 
@@ -26,7 +25,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tool_message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tool/message */ \"./source/tool/message.js\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/style.css */ \"./source/css/style.css\");\n\n\nconsole.log (_tool_message__WEBPACK_IMPORTED_MODULE_0__.message)\n\n//# sourceURL=webpack://webpack-boilerplate/./source/app.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tool_message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tool/message */ \"./source/tool/message.js\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/index.scss */ \"./source/sass/index.scss\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n// import './components/footer'\n\nconsole.log (_tool_message__WEBPACK_IMPORTED_MODULE_0__.message)\n\n//# sourceURL=webpack://webpack-boilerplate/./source/app.js?");
 
 /***/ }),
 
@@ -36,6 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _too
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"message\": () => (/* binding */ message)\n/* harmony export */ });\nconst message ='ok';\n\n\n//# sourceURL=webpack://webpack-boilerplate/./source/tool/message.js?");
 
 /***/ })
@@ -67,6 +68,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports

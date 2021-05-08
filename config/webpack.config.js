@@ -10,7 +10,7 @@ module.exports = {
         main: './source/app.js'
     },
     output: {
-        filename: '[name]-[contenthash].js',
+        filename: 'js/[name]-[contenthash].js',
         path: path.resolve(__dirname, '../build')
     },
     devServer: {
@@ -28,6 +28,11 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader"]
+            }
+            ,
+            {
+                test: /\.(scss|sass)$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader", 'sass-loader']
             }
         ]
     },
