@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif; }
+  body img {
+    width: 100%; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 80px; }
+

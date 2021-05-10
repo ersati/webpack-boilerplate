@@ -13,9 +13,10 @@
 /*!********************************!*\
   !*** ./source/sass/index.scss ***!
   \********************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleError: Module Error (from ./node_modules/sass-loader/dist/cjs.js):\\nCannot find module 'sass'\\nRequire stack:\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/utils.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/index.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/cjs.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/loader-runner/lib/loadLoader.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/loader-runner/lib/LoaderRunner.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/NormalModule.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/NormalModuleFactory.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/Compiler.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/webpack.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/index.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack-cli/lib/webpack-cli.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack-cli/lib/bootstrap.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack-cli/bin/cli.js\\n- /Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/bin/webpack.js\\n    at Object.emitError (/Users/ersati/Documents/webpack-boilerplate/node_modules/webpack/lib/NormalModule.js:525:6)\\n    at getSassImplementation (/Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/utils.js:55:21)\\n    at Object.loader (/Users/ersati/Documents/webpack-boilerplate/node_modules/sass-loader/dist/index.js:27:59)\");\n\n//# sourceURL=webpack://webpack-boilerplate/./source/sass/index.scss?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-boilerplate/./source/sass/index.scss?");
 
 /***/ }),
 
@@ -26,7 +27,17 @@ eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extrac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tool_message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tool/message */ \"./source/tool/message.js\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sass/index.scss */ \"./source/sass/index.scss\");\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sass_index_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n// import './components/footer'\n\nconsole.log (_tool_message__WEBPACK_IMPORTED_MODULE_0__.message)\n\n//# sourceURL=webpack://webpack-boilerplate/./source/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tool_message__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./tool/message */ \"./source/tool/message.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/footer */ \"./source/components/footer.js\");\n/* harmony import */ var _components_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_footer__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _sass_index_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sass/index.scss */ \"./source/sass/index.scss\");\n\n\n\nconsole.log (_tool_message__WEBPACK_IMPORTED_MODULE_0__.message)\n\n//# sourceURL=webpack://webpack-boilerplate/./source/app.js?");
+
+/***/ }),
+
+/***/ "./source/components/footer.js":
+/*!*************************************!*\
+  !*** ./source/components/footer.js ***!
+  \*************************************/
+/***/ (() => {
+
+eval("// import './_footer.scss'\n\n//# sourceURL=webpack://webpack-boilerplate/./source/components/footer.js?");
 
 /***/ }),
 
