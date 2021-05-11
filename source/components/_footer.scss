@@ -1,8 +1,11 @@
+$bgcolor: white;
+
 footer { 
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
-    color: white;
+    background-image: url(../images/img2.jpeg);
+    color: $bgcolor;
     height: 80px;
 }
