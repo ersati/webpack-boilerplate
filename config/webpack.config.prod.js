@@ -31,7 +31,22 @@ module.exports = {
             },
             {
                 test: /\.(jpeg|jpg|png)$/,
-                use: 'file-loader'
+                use: [{loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                    outputPath: 'images'
+                }},
+                 {
+                    loader: 'image-webpack-loader',
+                    options: {
+                        mozjpeg: {
+                            quality: 50,
+                            progressive: true
+                        }
+                    }
+
+                }]
+                
             }
         ]
     },
@@ -49,7 +64,7 @@ module.exports = {
             filename: 'about.html'
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/[name]-[contenthash].css'
+            filename: '[name]-[contenthash].css'
         })
     ]
 }
