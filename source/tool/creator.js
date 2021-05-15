@@ -4,7 +4,7 @@ export default class {
         this.element.style.height = '100px';
         document.body.appendChild(this.element);
     }
-    color = 'blue'
+    color = 'cadetblue'
     addBgc(color = this.color){
         this.element.style.backgroundColor = color;
     }
